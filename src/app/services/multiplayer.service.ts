@@ -35,7 +35,7 @@ export class MultiplayerService {
       }
 
       // Create new WebSocket connection
-      this.socket = new WebSocket('ws://localhost:3000');
+      this.socket = new WebSocket('wss://chess-backend-ht19.onrender.com');
 
       this.socket.onopen = () => {
         console.log('WebSocket connection established');
